@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { format, getDaysInMonth } from 'date-fns'
 import { fr } from 'date-fns/locale'
 import styles from './calendar.module.scss'
-export default function calendar () {
+export default function Calendar () {
     const [year, setYear] = useState(parseInt(format(new Date(), 'yyyy')));
     const [month, setMonth] = useState(parseInt(format(new Date(), 'MM')));
     const [daysInMonth, setDaysInMonth] = useState(getDaysInMonth(new Date(year, month)))
