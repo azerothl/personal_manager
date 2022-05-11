@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    .picture {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        img {
+            border-radius: 50%;
+            border: 10px white !important;
+            border-style: inset !important;
+            background: linear-gradient(135deg, rgba(205,205,205,1) 0%, rgba(255,255,255,1) 100%);
+        }
+    }
+}

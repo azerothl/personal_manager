@@ -1,0 +1,16 @@
+.wrapper {
+    max-width: 1024px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 25% 68% 7%;
+    // grid-gap: 10px;
+    grid-template-rows: 150px 200px 150px 150px 250px 100%;
+    grid-auto-rows: minmax(150px, auto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    & > * {
+        color-adjust: exact!important;  
+        -webkit-print-color-adjust: exact!important; 
+         print-color-adjust: exact!important;
+    }
+}
+

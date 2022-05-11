@@ -1,0 +1,5 @@
+.nobreak {
+    display: block;
+    page-break-before: avoid;
+    page-break-inside: auto;
+}
