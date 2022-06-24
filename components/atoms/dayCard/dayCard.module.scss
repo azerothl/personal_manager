@@ -1,0 +1,42 @@
+@import '/styles/constants.scss';
+
+.dayContainer {
+    width: 100%;
+    height: 100px;
+    min-width: 100px;
+    & > div {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        .dayNumber {
+            heigth:20%;
+            width:100%;
+            time {
+                text-align: left !important;
+                padding-left: 4px;
+                font-size: 0.7rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,auto;
+            }
+        }
+        
+        .dayActions {
+            height: 80%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            flex-direction: column;
+            align-content: stretch;
+            justify-content: space-evenly;
+            .activity {
+                opacity: 0.7;
+            }
+        }
+    }
+    &:nth-child(odd) > div {
+        background-color:$blue-grey-100;
+    }
+    &:nth-child(even) > div {
+        background-color:$teal-100;
+    }
+}
