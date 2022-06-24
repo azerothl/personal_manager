@@ -1,0 +1,30 @@
+.activityContainer {
+    cursor: move;
+    transition: all 0.2s;
+    position: relative;
+    &.noDrag {
+        cursor: default;
+    }
+    &:hover {
+        box-shadow: 0 0 2px 1px #124577;
+    }
+    .upResize {
+        height: 2px;
+        &:hover {
+            background: #1245776b;
+            border-top: 1px dashed red;
+            cursor: n-resize;
+        }
+    }
+    .downResize {
+        height: 2px;
+        bottom: 0px;
+        position: absolute;
+        width: 100%;
+        &:hover {
+            background: #1245776b;
+            border-bottom: 1px dashed red;
+            cursor: n-resize;
+        }
+    }
+}

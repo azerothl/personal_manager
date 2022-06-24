@@ -11,6 +11,7 @@ import Markdown from "markdown-to-jsx";
 import FormHeader from '../components/header/form';
 import stylesHeader from '../components/header/header.module.scss';
 import CV from "../components/cv";
+import { Button } from "../components/atoms/button";
 
 export default function CreateCV() {
     const [personal, setPersonal] = useState({picture:'/images/noprofile.png', firstName:'John', lastName:'Doe', position:'peon'});
@@ -290,7 +291,7 @@ export default function CreateCV() {
             }
         </div>
         </div>
-        <button className={styles.generateBtn} onClick={handleGenerateCV}>Générer le CV</button>
+        <Button style={[styles.generateBtn]} onClick={handleGenerateCV} label='Générer le CV' primary={true}/>
         </>
         }
         {showCV && 

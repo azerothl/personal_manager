@@ -1,0 +1,52 @@
+.selector {
+    min-width: 50px;
+    max-width: max-content;
+    min-height: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    min-width: min-content;
+    max-width: max-content;
+    width: fit-content;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    &.selector--disabled {
+        cursor:not-allowed;
+        background-color: rgba(0,0,0,0.35);
+        color: white;
+        ul {
+            background-color: rgba(0,0,0,0.35);
+            li {
+                cursor:not-allowed;
+            }
+        }
+    }
+    .selectedLabel {
+        display: 'contents'
+    }
+    ul {
+        position:absolute;
+        background-color: white;
+        padding: 0;
+        list-style: none;
+        min-width: 50px;
+        max-width: max-content;
+        min-height: 15px;
+        border: 1px solid black;
+        border-radius: 5px;
+        li {
+            cursor: pointer;
+            &.selected {
+                background-color: #d1fdad
+            }
+            img {
+                max-width: 32px;
+                vertical-align: middle; 
+            }
+        }
+    }
+     
+}

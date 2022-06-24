@@ -1,0 +1,24 @@
+.hourGridContainer {
+    display: block;
+    position: relative;
+    .hourGrid {
+        display:grid;
+        grid-template-rows: repeat(96, 0.5rem);
+        & span.hourLabel {
+            display: flex;
+            align-items: center;
+            color: #333;
+            font-size: 0.5rem;
+            margin-left: -0.6rem;
+        }
+        & > div {
+            
+            &.hourLine {
+                border-top: 1px dashed rgba(36, 13, 119, 0.767);
+            }
+            &.subHourLine {
+                border-top: 1px dashed rgba(0, 0, 0, 0.219);
+            }
+        }
+    }
+}
